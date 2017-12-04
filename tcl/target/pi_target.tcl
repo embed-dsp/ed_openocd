@@ -1,5 +1,5 @@
 
-
+#transport select jtag
 
 adapter_khz 1000
 adapter_nsrst_delay 400

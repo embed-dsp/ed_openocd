@@ -29,6 +29,8 @@ build: prepare configure compile
 	
 .PHONY: prepare
 prepare:
+	cd openocd-code && ./bootstrap
+
 #	# Discard any local changes
 #	cd alsa-lib && git checkout -- .
 #	
