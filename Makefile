@@ -24,7 +24,7 @@ all:
 	
 
 .PHONY: build
-build: prepare configure compile
+build: compile #prepare configure compile
 	
 	
 .PHONY: prepare

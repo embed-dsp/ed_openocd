@@ -1,0 +1,4925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="openocd-code" name="0">
+      <df name="contrib">
+        <df name="libdcc">
+          <in>dcc_stdio.c</in>
+          <in>example.c</in>
+        </df>
+        <df name="loaders">
+          <df name="flash">
+            <df name="at91sam7x">
+              <in>dcc.c</in>
+              <in>main.c</in>
+              <in>samflash.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="remote_bitbang">
+          <in>remote_bitbang_sysfsgpio.c</in>
+        </df>
+        <df name="rtos-helpers">
+          <in>FreeRTOS-openocd.c</in>
+          <in>uCOS-III-openocd.c</in>
+        </df>
+        <in>itmdump.c</in>
+      </df>
+      <df name="jimtcl">
+        <df name="autosetup">
+          <in>jimsh0.c</in>
+        </df>
+        <df name="examples.api">
+          <in>jim_command.c</in>
+          <in>jim_hello.c</in>
+          <in>jim_list.c</in>
+          <in>jim_obj.c</in>
+          <in>jim_return.c</in>
+        </df>
+        <df name="examples.ext">
+          <in>helloworld.c</in>
+        </df>
+        <df name="sqlite3">
+          <in>jim-sqlite3.c</in>
+          <in>shell.c</in>
+          <in>sqlite3.c</in>
+        </df>
+        <in>_binary.c</in>
+        <in>_glob.c</in>
+        <in>_initjimsh.c</in>
+        <in>_load-static-exts.c</in>
+        <in>_nshelper.c</in>
+        <in>_oo.c</in>
+        <in>_stdlib.c</in>
+        <in>_tclcompat.c</in>
+        <in>_tree.c</in>
+        <in>jim-aio.c</in>
+        <in>jim-array.c</in>
+        <in>jim-clock.c</in>
+        <in>jim-eventloop.c</in>
+        <in>jim-exec.c</in>
+        <in>jim-file.c</in>
+        <in>jim-format.c</in>
+        <in>jim-history.c</in>
+        <in>jim-interactive.c</in>
+        <in>jim-interp.c</in>
+        <in>jim-load.c</in>
+        <in>jim-mk.cpp</in>
+        <in>jim-namespace.c</in>
+        <in>jim-pack.c</in>
+        <in>jim-package.c</in>
+        <in>jim-posix.c</in>
+        <in>jim-readdir.c</in>
+        <in>jim-readline.c</in>
+        <in>jim-regexp.c</in>
+        <in>jim-sdl.c</in>
+        <in>jim-signal.c</in>
+        <in>jim-sqlite3.c</in>
+        <in>jim-subcmd.c</in>
+        <in>jim-syslog.c</in>
+        <in>jim-tclprefix.c</in>
+        <in>jim-win32.c</in>
+        <in>jim-win32compat.c</in>
+        <in>jim-zlib.c</in>
+        <in>jim.c</in>
+        <in>jimregexp.c</in>
+        <in>jimsh.c</in>
+        <in>linenoise.c</in>
+        <in>utf8.c</in>
+      </df>
+      <df name="src">
+        <df name="flash">
+          <df name="nand">
+            <in>arm_io.c</in>
+            <in>at91sam9.c</in>
+            <in>core.c</in>
+            <in>davinci.c</in>
+            <in>driver.c</in>
+            <in>ecc.c</in>
+            <in>ecc_kw.c</in>
+            <in>fileio.c</in>
+            <in>lpc3180.c</in>
+            <in>lpc32xx.c</in>
+            <in>mx3.c</in>
+            <in>mxc.c</in>
+            <in>nonce.c</in>
+            <in>nuc910.c</in>
+            <in>orion.c</in>
+            <in>s3c2410.c</in>
+            <in>s3c2412.c</in>
+            <in>s3c2440.c</in>
+            <in>s3c2443.c</in>
+            <in>s3c24xx.c</in>
+            <in>s3c6400.c</in>
+            <in>tcl.c</in>
+          </df>
+          <df name="nor">
+            <in>aduc702x.c</in>
+            <in>aducm360.c</in>
+            <in>ambiqmicro.c</in>
+            <in>at91sam3.c</in>
+            <in>at91sam4.c</in>
+            <in>at91sam4l.c</in>
+            <in>at91sam7.c</in>
+            <in>at91samd.c</in>
+            <in>ath79.c</in>
+            <in>atsamv.c</in>
+            <in>avrf.c</in>
+            <in>cfi.c</in>
+            <in>core.c</in>
+            <in>drivers.c</in>
+            <in>dsp5680xx_flash.c</in>
+            <in>efm32.c</in>
+            <in>em357.c</in>
+            <in>faux.c</in>
+            <in>fm3.c</in>
+            <in>fm4.c</in>
+            <in>jtagspi.c</in>
+            <in>kinetis.c</in>
+            <in>kinetis_ke.c</in>
+            <in>lpc2000.c</in>
+            <in>lpc288x.c</in>
+            <in>lpc2900.c</in>
+            <in>lpcspifi.c</in>
+            <in>mdr.c</in>
+            <in>mrvlqspi.c</in>
+            <in>niietcm4.c</in>
+            <in>non_cfi.c</in>
+            <in>nrf5.c</in>
+            <in>numicro.c</in>
+            <in>ocl.c</in>
+            <in>pic32mx.c</in>
+            <in>psoc4.c</in>
+            <in>sim3x.c</in>
+            <in>spi.c</in>
+            <in>stellaris.c</in>
+            <in>stm32f1x.c</in>
+            <in>stm32f2x.c</in>
+            <in>stm32l4x.c</in>
+            <in>stm32lx.c</in>
+            <in>stmsmi.c</in>
+            <in>str7x.c</in>
+            <in>str9x.c</in>
+            <in>str9xpec.c</in>
+            <in>tcl.c</in>
+            <in>tms470.c</in>
+            <in>virtual.c</in>
+            <in>xmc1xxx.c</in>
+            <in>xmc4xxx.c</in>
+          </df>
+          <in>common.c</in>
+          <in>mflash.c</in>
+        </df>
+        <df name="helper">
+          <in>binarybuffer.c</in>
+          <in>command.c</in>
+          <in>configuration.c</in>
+          <in>fileio.c</in>
+          <in>ioutil.c</in>
+          <in>ioutil_stubs.c</in>
+          <in>jep106.c</in>
+          <in>jim-nvp.c</in>
+          <in>log.c</in>
+          <in>options.c</in>
+          <in>replacements.c</in>
+          <in>time_support.c</in>
+          <in>time_support_common.c</in>
+          <in>util.c</in>
+        </df>
+        <df name="jtag">
+          <df name="aice">
+            <in>aice_interface.c</in>
+            <in>aice_pipe.c</in>
+            <in>aice_port.c</in>
+            <in>aice_transport.c</in>
+            <in>aice_usb.c</in>
+          </df>
+          <df name="drivers">
+            <df name="libjaylink">
+              <df name="libjaylink">
+                <in>buffer.c</in>
+                <in>core.c</in>
+                <in>device.c</in>
+                <in>discovery.c</in>
+                <in>discovery_tcp.c</in>
+                <in>discovery_usb.c</in>
+                <in>emucom.c</in>
+                <in>error.c</in>
+                <in>fileio.c</in>
+                <in>jtag.c</in>
+                <in>list.c</in>
+                <in>log.c</in>
+                <in>socket.c</in>
+                <in>strutil.c</in>
+                <in>swd.c</in>
+                <in>swo.c</in>
+                <in>target.c</in>
+                <in>transport.c</in>
+                <in>transport_tcp.c</in>
+                <in>transport_usb.c</in>
+                <in>util.c</in>
+                <in>version.c</in>
+              </df>
+            </df>
+            <df name="OpenULINK">
+              <df name="src">
+                <in>delay.c</in>
+                <in>jtag.c</in>
+                <in>main.c</in>
+                <in>protocol.c</in>
+                <in>usb.c</in>
+              </df>
+            </df>
+            <df name="usb_blaster">
+              <in>ublast2_access_libusb.c</in>
+              <in>ublast_access_ftdi.c</in>
+              <in>usb_blaster.c</in>
+            </df>
+            <df name="versaloon">
+              <df name="usbtoxxx">
+                <in>usbtogpio.c</in>
+                <in>usbtojtagraw.c</in>
+                <in>usbtopwr.c</in>
+                <in>usbtoswd.c</in>
+                <in>usbtoxxx.c</in>
+              </df>
+              <in>versaloon.c</in>
+            </df>
+            <in>amt_jtagaccel.c</in>
+            <in>arm-jtag-ew.c</in>
+            <in>at91rm9200.c</in>
+            <in>bcm2835gpio.c</in>
+            <in>bitbang.c</in>
+            <in>bitq.c</in>
+            <in>buspirate.c</in>
+            <in>cmsis_dap_usb.c</in>
+            <in>driver.c</in>
+            <in>dummy.c</in>
+            <in>ep93xx.c</in>
+            <in>ftdi.c</in>
+            <in>gw16012.c</in>
+            <in>imx_gpio.c</in>
+            <in>jlink.c</in>
+            <in>jtag_vpi.c</in>
+            <in>kitprog.c</in>
+            <in>libusb0_common.c</in>
+            <in>libusb1_common.c</in>
+            <in>mpsse.c</in>
+            <in>opendous.c</in>
+            <in>openjtag.c</in>
+            <in>osbdm.c</in>
+            <in>parport.c</in>
+            <in>presto.c</in>
+            <in>remote_bitbang.c</in>
+            <in>rlink.c</in>
+            <in>rlink_speed_table.c</in>
+            <in>stlink_usb.c</in>
+            <in>sysfsgpio.c</in>
+            <in>ti_icdi_usb.c</in>
+            <in>ulink.c</in>
+            <in>usb_common.c</in>
+            <in>usbprog.c</in>
+            <in>vsllink.c</in>
+          </df>
+          <df name="hla">
+            <in>hla_interface.c</in>
+            <in>hla_layout.c</in>
+            <in>hla_tcl.c</in>
+            <in>hla_transport.c</in>
+          </df>
+          <df name="minidummy">
+            <in>minidummy.c</in>
+          </df>
+          <df name="zy1000">
+            <in>zy1000.c</in>
+          </df>
+          <in>adapter.c</in>
+          <in>commands.c</in>
+          <in>core.c</in>
+          <in>interface.c</in>
+          <in>interfaces.c</in>
+          <in>tcl.c</in>
+        </df>
+        <df name="pld">
+          <in>pld.c</in>
+          <in>virtex2.c</in>
+          <in>xilinx_bit.c</in>
+        </df>
+        <df name="rtos">
+          <in>ChibiOS.c</in>
+          <in>FreeRTOS.c</in>
+          <in>ThreadX.c</in>
+          <in>eCos.c</in>
+          <in>embKernel.c</in>
+          <in>linux.c</in>
+          <in>mqx.c</in>
+          <in>rtos.c</in>
+          <in>rtos_chibios_stackings.c</in>
+          <in>rtos_ecos_stackings.c</in>
+          <in>rtos_embkernel_stackings.c</in>
+          <in>rtos_mqx_stackings.c</in>
+          <in>rtos_standard_stackings.c</in>
+          <in>rtos_ucos_iii_stackings.c</in>
+          <in>uCOS-III.c</in>
+        </df>
+        <df name="server">
+          <in>gdb_server.c</in>
+          <in>server.c</in>
+          <in>server_stubs.c</in>
+          <in>tcl_server.c</in>
+          <in>telnet_server.c</in>
+        </df>
+        <df name="svf">
+          <in>svf.c</in>
+        </df>
+        <df name="target">
+          <df name="openrisc">
+            <in>jsp_server.c</in>
+            <in>or1k.c</in>
+            <in>or1k_du_adv.c</in>
+            <in>or1k_tap_mohor.c</in>
+            <in>or1k_tap_vjtag.c</in>
+            <in>or1k_tap_xilinx_bscan.c</in>
+          </df>
+          <in>aarch64.c</in>
+          <in>adi_v5_jtag.c</in>
+          <in>adi_v5_swd.c</in>
+          <in>algorithm.c</in>
+          <in>arm11.c</in>
+          <in>arm11_dbgtap.c</in>
+          <in>arm720t.c</in>
+          <in>arm7_9_common.c</in>
+          <in>arm7tdmi.c</in>
+          <in>arm920t.c</in>
+          <in>arm926ejs.c</in>
+          <in>arm946e.c</in>
+          <in>arm966e.c</in>
+          <in>arm9tdmi.c</in>
+          <in>arm_adi_v5.c</in>
+          <in>arm_cti.c</in>
+          <in>arm_disassembler.c</in>
+          <in>arm_dpm.c</in>
+          <in>arm_jtag.c</in>
+          <in>arm_semihosting.c</in>
+          <in>arm_simulator.c</in>
+          <in>armv4_5.c</in>
+          <in>armv4_5_cache.c</in>
+          <in>armv4_5_mmu.c</in>
+          <in>armv7a.c</in>
+          <in>armv7a_cache.c</in>
+          <in>armv7a_cache_l2x.c</in>
+          <in>armv7m.c</in>
+          <in>armv7m_trace.c</in>
+          <in>armv8.c</in>
+          <in>armv8_cache.c</in>
+          <in>armv8_dpm.c</in>
+          <in>armv8_opcodes.c</in>
+          <in>avr32_ap7k.c</in>
+          <in>avr32_jtag.c</in>
+          <in>avr32_mem.c</in>
+          <in>avr32_regs.c</in>
+          <in>avrt.c</in>
+          <in>breakpoints.c</in>
+          <in>cortex_a.c</in>
+          <in>cortex_m.c</in>
+          <in>dsp563xx.c</in>
+          <in>dsp563xx_once.c</in>
+          <in>dsp5680xx.c</in>
+          <in>embeddedice.c</in>
+          <in>etb.c</in>
+          <in>etm.c</in>
+          <in>etm_dummy.c</in>
+          <in>fa526.c</in>
+          <in>feroceon.c</in>
+          <in>hla_target.c</in>
+          <in>image.c</in>
+          <in>lakemont.c</in>
+          <in>ls1_sap.c</in>
+          <in>mips32.c</in>
+          <in>mips32_dmaacc.c</in>
+          <in>mips32_pracc.c</in>
+          <in>mips_ejtag.c</in>
+          <in>mips_m4k.c</in>
+          <in>nds32.c</in>
+          <in>nds32_aice.c</in>
+          <in>nds32_cmd.c</in>
+          <in>nds32_disassembler.c</in>
+          <in>nds32_reg.c</in>
+          <in>nds32_tlb.c</in>
+          <in>nds32_v2.c</in>
+          <in>nds32_v3.c</in>
+          <in>nds32_v3_common.c</in>
+          <in>nds32_v3m.c</in>
+          <in>oocd_trace.c</in>
+          <in>quark_d20xx.c</in>
+          <in>quark_x10xx.c</in>
+          <in>register.c</in>
+          <in>smp.c</in>
+          <in>target.c</in>
+          <in>target_request.c</in>
+          <in>testee.c</in>
+          <in>trace.c</in>
+          <in>x86_32_common.c</in>
+          <in>xscale.c</in>
+        </df>
+        <df name="transport">
+          <in>transport.c</in>
+        </df>
+        <df name="xsvf">
+          <in>xsvf.c</in>
+        </df>
+        <in>hello.c</in>
+        <in>main.c</in>
+        <in>openocd.c</in>
+      </df>
+      <df name="testing">
+        <df name="examples">
+          <df name="AT91R40008Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="cortex">
+            <in>fault.c</in>
+            <in>test.c</in>
+          </df>
+          <df name="ledtest-imx27ads">
+            <in>test.c</in>
+          </df>
+          <df name="ledtest-imx31pdk">
+            <in>test.c</in>
+          </df>
+          <df name="LPC2148Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="LPC2294Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="PIC32">
+            <in>BlinkingLeds.c</in>
+          </df>
+          <df name="SAM7S256Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="SAM7X256Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="STR710JtagSpeed">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="STR710Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+          <df name="STR912Test">
+            <df name="src">
+              <in>main.c</in>
+            </df>
+          </df>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>LICENSE</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>README.md</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>openocd-code</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-mtune=generic -march=x86-64 -g -O2"/>
+        <element flagsID="1" commonFlags="-mtune=generic -march=x86-64 -g -O2 -fPIC"/>
+        <element flagsID="2" commonFlags="-std=c++14"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile build</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>openocd-code</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <folder path="0/contrib">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/jimtcl/autosetup">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/jimtcl/examples.api">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/jimtcl/examples.ext">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/jimtcl/sqlite3">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/flash/nand">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/flash/nand</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/jtag/aice">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/jtag/drivers/OpenULINK">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/jtag/drivers/versaloon/usbtoxxx">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/versaloon/usbtoxxx</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers/versaloon</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/jtag/hla">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/jtag/hla</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/jtag/minidummy">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/jtag/zy1000">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/pld">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/pld</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/server">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/server</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/svf">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/svf</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/target/openrisc">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/target/openrisc</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/transport">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/xsvf">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code/src/xsvf</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/svf</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/testing">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="openocd-code/contrib/itmdump.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/libdcc/dcc_stdio.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/libdcc/example.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/loaders/flash/at91sam7x/dcc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/loaders/flash/at91sam7x/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/loaders/flash/at91sam7x/samflash.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/remote_bitbang/remote_bitbang_sysfsgpio.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/rtos-helpers/FreeRTOS-openocd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/contrib/rtos-helpers/uCOS-III-openocd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/_binary.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_glob.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_initjimsh.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_load-static-exts.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_nshelper.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_oo.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_stdlib.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_tclcompat.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/_tree.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/autosetup/jimsh0.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/examples.api/jim_command.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/examples.api/jim_hello.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/examples.api/jim_list.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/examples.api/jim_obj.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/examples.api/jim_return.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/examples.ext/helloworld.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/jim-aio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-array.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-clock.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-eventloop.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-exec.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-file.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-format.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-history.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-interactive.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-interp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-load.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-mk.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-namespace.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-pack.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-package.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-posix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-readdir.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-readline.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-regexp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-sdl.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-signal.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-sqlite3.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-subcmd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-syslog.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-tclprefix.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-win32.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-win32compat.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim-zlib.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jim.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jimregexp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/jimsh.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/linenoise.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/jimtcl/sqlite3/jim-sqlite3.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/sqlite3/shell.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/sqlite3/sqlite3.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/jimtcl/utf8.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/mflash.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/arm_io.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/at91sam9.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/core.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/flash</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/davinci.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/driver.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/ecc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/ecc_kw.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/fileio.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/lpc3180.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/lpc32xx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/mx3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/mxc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/nonce.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/nuc910.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/orion.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/s3c2410.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/s3c2412.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/s3c2440.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/s3c2443.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/s3c24xx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/s3c6400.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nand/tcl.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/aduc702x.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/aducm360.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/ambiqmicro.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/at91sam3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/at91sam4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/at91sam4l.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/at91sam7.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/at91samd.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/ath79.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/atsamv.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/avrf.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/cfi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/core.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/flash</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/drivers.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/dsp5680xx_flash.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/efm32.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/em357.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/faux.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/fm3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/fm4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/jtagspi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/kinetis.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/kinetis_ke.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/lpc2000.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/lpc288x.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/lpc2900.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/lpcspifi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/mdr.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/mrvlqspi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/niietcm4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/non_cfi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/nrf5.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/numicro.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/ocl.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/pic32mx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/psoc4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/sim3x.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/spi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/stellaris.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/stm32f1x.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/stm32f2x.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/stm32l4x.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/stm32lx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/stmsmi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/str7x.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/str9x.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/str9xpec.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/tcl.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/tms470.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/virtual.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/xmc1xxx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/flash/nor/xmc4xxx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/hello.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/binarybuffer.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/command.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/configuration.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/fileio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/ioutil.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/ioutil_stubs.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/jep106.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/jim-nvp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/log.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/options.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/replacements.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/time_support.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/time_support_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/helper/util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/adapter.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/aice/aice_interface.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/aice/aice_pipe.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/aice/aice_port.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/aice/aice_transport.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/aice/aice_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/commands.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/core.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/src/svf</pElem>
+            <pElem>openocd-code/src/xsvf</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/OpenULINK/src/delay.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/jtag/drivers/OpenULINK/src/jtag.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/jtag/drivers/OpenULINK/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/jtag/drivers/OpenULINK/src/protocol.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/jtag/drivers/OpenULINK/src/usb.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/jtag/drivers/amt_jtagaccel.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/arm-jtag-ew.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/at91rm9200.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/bcm2835gpio.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/bitbang.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/bitq.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/buspirate.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/cmsis_dap_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/driver.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/ep93xx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/ftdi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/gw16012.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/imx_gpio.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/jlink.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/jtag_vpi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/kitprog.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/buffer.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/core.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/device.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/discovery.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/discovery_tcp.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/discovery_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/emucom.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/error.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/fileio.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/jtag.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/list.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/log.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/socket.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/strutil.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/swd.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/swo.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/target.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/transport.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/transport_tcp.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/transport_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/util.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libjaylink/libjaylink/version.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/libjaylink/libjaylink</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libusb0_common.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/libusb1_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/mpsse.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/opendous.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/openjtag.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/osbdm.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/parport.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/presto.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/remote_bitbang.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/rlink.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/rlink_speed_table.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/stlink_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag/hla</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/sysfsgpio.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/ti_icdi_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag/hla</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/ulink.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/usb_blaster/ublast2_access_libusb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/usb_blaster</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/usb_blaster/ublast_access_ftdi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/usb_blaster/usb_blaster.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/usb_blaster</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/usb_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/usbprog.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/versaloon/usbtoxxx/usbtogpio.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/versaloon/usbtoxxx/usbtojtagraw.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/versaloon/usbtoxxx/usbtopwr.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/versaloon/usbtoxxx/usbtoswd.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/versaloon/usbtoxxx/usbtoxxx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/versaloon/versaloon.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers/versaloon</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag/drivers/versaloon/usbtoxxx</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/drivers/vsllink.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag/drivers</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>/usr/include/libusb-1.0</pElem>
+            <pElem>openocd-code/src/jtag/drivers/versaloon/usbtoxxx</pElem>
+            <pElem>openocd-code/src/jtag/drivers/versaloon</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/hla/hla_interface.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/hla/hla_layout.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/hla/hla_tcl.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/hla/hla_transport.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/interface.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/interfaces.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/minidummy/minidummy.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/jtag/tcl.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/jtag/zy1000/zy1000.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/src/main.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/openocd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/pld/pld.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/pld/virtex2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/pld/xilinx_bit.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/ChibiOS.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/FreeRTOS.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/ThreadX.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/eCos.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/embKernel.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/linux.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/mqx.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos_chibios_stackings.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos_ecos_stackings.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos_embkernel_stackings.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos_mqx_stackings.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos_standard_stackings.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/rtos_ucos_iii_stackings.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/rtos/uCOS-III.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/server/gdb_server.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/flash/nor</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/server/server.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/target/openrisc</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/server/server_stubs.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/server/tcl_server.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/server/telnet_server.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/svf/svf.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/aarch64.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/adi_v5_jtag.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/adi_v5_swd.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/algorithm.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm11.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm11_dbgtap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm720t.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm7_9_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm7tdmi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm920t.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm926ejs.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm946e.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm966e.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm9tdmi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_adi_v5.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_cti.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_disassembler.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_dpm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_jtag.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_semihosting.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/arm_simulator.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv4_5.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv4_5_cache.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv4_5_mmu.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv7a.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv7a_cache.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv7a_cache_l2x.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv7m.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv7m_trace.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv8.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv8_cache.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv8_dpm.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/armv8_opcodes.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/avr32_ap7k.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/avr32_jtag.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/avr32_mem.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/avr32_regs.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/avrt.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/breakpoints.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/cortex_a.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/cortex_m.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/dsp563xx.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/dsp563xx_once.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/dsp5680xx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/embeddedice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/etb.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/etm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/etm_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/fa526.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/feroceon.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/hla_target.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/jtag/hla</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/image.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/lakemont.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/ls1_sap.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/mips32.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/mips32_dmaacc.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/mips32_pracc.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/mips_ejtag.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/mips_m4k.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_aice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_cmd.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_disassembler.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_reg.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_tlb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_v2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_v3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_v3_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/nds32_v3m.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag/aice</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/oocd_trace.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/openrisc/jsp_server.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/openrisc/or1k.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/openrisc/or1k_du_adv.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/openrisc/or1k_tap_mohor.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/openrisc/or1k_tap_vjtag.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/openrisc/or1k_tap_xilinx_bscan.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/quark_d20xx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/quark_x10xx.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/register.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/smp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/target.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src/rtos</pElem>
+            <pElem>openocd-code/src/server</pElem>
+            <pElem>openocd-code/src/transport</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/target_request.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/testee.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/trace.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/x86_32_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/target/xscale.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>openocd-code/src/target</pElem>
+            <pElem>openocd-code/src/helper</pElem>
+            <pElem>openocd-code/jimtcl</pElem>
+            <pElem>openocd-code/src/jtag</pElem>
+            <pElem>openocd-code/src</pElem>
+            <pElem>openocd-code</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="openocd-code/src/transport/transport.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/src/xsvf/xsvf.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="openocd-code/testing/examples/AT91R40008Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/LPC2148Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/LPC2294Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/PIC32/BlinkingLeds.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/SAM7S256Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/SAM7X256Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/STR710JtagSpeed/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/STR710Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/STR912Test/src/main.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/cortex/fault.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/cortex/test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/ledtest-imx27ads/test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="openocd-code/testing/examples/ledtest-imx31pdk/test.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
