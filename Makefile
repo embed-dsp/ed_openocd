@@ -14,8 +14,6 @@ DESTDIR = /opt/ed_openocd
 
 # ----------------------------------------
 
-PATH := $(TOOL_CHAIN):$(PATH)
-
 PREFIX = $(DESTDIR)
 
 OPENOCD = openocd
@@ -75,7 +73,6 @@ configure:
 .PHONY: compile
 compile:
 	cd $(OPENOCD) && make -j4
-#	cd $(OPENOCD) && make
 	
 
 .PHONY: install
