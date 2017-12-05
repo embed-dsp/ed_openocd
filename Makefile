@@ -62,6 +62,11 @@ distclean:
 	cd $(OPENOCD) && make distclean
 
 
+.PHONY: clean
+clean:
+	cd $(OPENOCD) && make clean
+
+
 .PHONY: configure
 configure:
 	cd $(OPENOCD) && ./configure --prefix=$(PREFIX) --enable-sysfsgpio --enable-bcm2835gpio
@@ -70,6 +75,7 @@ configure:
 .PHONY: compile
 compile:
 	cd $(OPENOCD) && make -j4
+#	cd $(OPENOCD) && make
 	
 
 .PHONY: install
