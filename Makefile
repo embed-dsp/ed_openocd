@@ -50,7 +50,8 @@ prepare:
 	cd $(OPENOCD) && git checkout -- .
 	
 	# Checkout specific version
-	cd $(OPENOCD) && git checkout v0.10.0
+	cd $(OPENOCD) && git checkout master
+#	cd $(OPENOCD) && git checkout v0.10.0
 
 	# ...
 	cd $(OPENOCD) && ./bootstrap
