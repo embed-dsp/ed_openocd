@@ -14,55 +14,63 @@ DESTDIR = /opt/ed_openocd
 
 # ----------------------------------------
 
-PATH:=$(TOOL_CHAIN):$(PATH)
+PATH := $(TOOL_CHAIN):$(PATH)
 
 PREFIX = $(DESTDIR)
-EXEC_PREFIX = $(PREFIX)/$(SOC)
+
+OPENOCD = openocd
 
 
 all:
-	
+	@echo ""
+	@echo "## First time"
+	@echo "make clone	    # Get openocd source from git repo"
+	@echo "make prepare	    # Checkout specific version"
+	@echo "make configure"
+	@echo "make compile"
+	@echo "sudo make install"
+	@echo ""
+	@echo "## Any other time"
+	@echo "make distclean	    # Clean all build products"
+	@echo "make configure"
+	@echo "make compile"
+	@echo "sudo make install"
+	@echo ""
 
-.PHONY: build
-build: compile #prepare configure compile
-	
-	
+
+.PHONY: clone
+clone:
+	git clone http://repo.or.cz/openocd.git
+#	git clone https://git.code.sf.net/p/openocd/code openocd
+
+
 .PHONY: prepare
 prepare:
-	cd openocd-code && ./bootstrap
-
-#	# Discard any local changes
-#	cd alsa-lib && git checkout -- .
-#	
-#	# Checkout specific version
-#	cd alsa-lib && git checkout v1.1.3
-#	
-#	# Rebuild configure
-#	cd alsa-lib && autoreconf -f -i
+	# Discard any local changes
+	cd $(OPENOCD) && git checkout -- .
 	
+	# Checkout specific version
+	cd $(OPENOCD) && git checkout v0.10.0
+
+	# ...
+	cd $(OPENOCD) && ./bootstrap
+
+
+.PHONY: distclean
+distclean:
+	cd $(OPENOCD) && make distclean
+
 
 .PHONY: configure
 configure:
-	cd openocd-code && ./configure --prefix=$(PREFIX) --exec-prefix=$(EXEC_PREFIX) --enable-sysfsgpio --enable-bcm2835gpio
-#	cd alsa-lib && ./configure CFLAGS="$(CCFLAGS)" --host=$(HOST) --prefix=$(PREFIX) --exec-prefix=$(EXEC_PREFIX) --enable-static --disable-shared --disable-python
+	cd $(OPENOCD) && ./configure --prefix=$(PREFIX) --enable-sysfsgpio --enable-bcm2835gpio
 	
 
 .PHONY: compile
 compile:
-	cd openocd-code && make -j4
+	cd $(OPENOCD) && make -j4
 	
 
 .PHONY: install
 install:
-	cd openocd-code && make install
-	
-
-.PHONY: distclean
-distclean:
-	cd openocd-code && make distclean
-	
-
-.PHONY: clean
-clean:
-	cd openocd-code && make clean
-	
+	cd $(OPENOCD) && make install
