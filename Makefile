@@ -1,5 +1,5 @@
 
-# Copyright (c) 2017 embed-dsp
+# Copyright (c) 2017-2018 embed-dsp
 # All Rights Reserved
 
 # $Author:   Gudmundur Bogason <gb@embed-dsp.com> $
@@ -7,32 +7,46 @@
 # $Revision: $
 
 
-# ----------------------------------------
-# Installation destination.
-# ----------------------------------------
-DESTDIR = /opt/ed_openocd
+CC = /usr/bin/gcc
 
-# ----------------------------------------
+PACKAGE_NAME = openocd
 
-PREFIX = $(DESTDIR)
+# Package version number (git master branch / git tag)
+PACKAGE_VERSION = master
+# PACKAGE_VERSION = v0.10.0
 
-OPENOCD = openocd
+PACKAGE = $(PACKAGE_NAME)-$(PACKAGE_VERSION)
+
+# Architecture.
+ARCH = $(shell ./bin/get_arch.sh)
+
+# Installation.
+PREFIX = /opt/openocd/$(PACKAGE)
+EXEC_PREFIX = $(PREFIX)/$(ARCH)
+
+# Set number of simultaneous jobs (Default 4)
+ifeq ($(J),)
+	J = 4
+endif
 
 
 all:
 	@echo ""
-	@echo "## First time"
-	@echo "make clone	    # Get openocd source from git repo"
-	@echo "make prepare	    # Checkout specific version"
-	@echo "make configure"
-	@echo "make compile"
+	@echo "## Get the source"
+	@echo "make clone              # Get openocd source from git repo"
+	@echo "make pull               # ..."
+	@echo ""
+	@echo "## Build"
+	@echo "make prepare            # Checkout specific version"
+	@echo "make configure [M=...]"
+	@echo "make compile [J=...]"
+	@echo ""
+	@echo "## Install"
 	@echo "sudo make install"
 	@echo ""
-	@echo "## Any other time"
-	@echo "make distclean	    # Clean all build products"
-	@echo "make configure"
-	@echo "make compile"
-	@echo "sudo make install"
+	@echo "## Cleanup"
+	@echo "make distclean          # Clean all build products"
+	@echo "make clean"
 	@echo ""
 
 
@@ -42,39 +56,47 @@ clone:
 #	git clone https://git.code.sf.net/p/openocd/code openocd
 
 
+.PHONY: pull
+pull:
+	# Discard any local changes
+	cd $(PACKAGE_NAME) && git checkout -- .
+	
+	# Checkout master branch
+	cd $(PACKAGE_NAME) && git checkout master
+	
+	# ...
+	cd $(PACKAGE_NAME) && git pull
+
+
 .PHONY: prepare
 prepare:
-	# Discard any local changes
-	cd $(OPENOCD) && git checkout -- .
-	
 	# Checkout specific version
-	cd $(OPENOCD) && git checkout master
-#	cd $(OPENOCD) && git checkout v0.10.0
+	cd $(PACKAGE_NAME) && git checkout $(PACKAGE_VERSION)
 
-	# ...
-	cd $(OPENOCD) && ./bootstrap
-
-
-.PHONY: distclean
-distclean:
-	cd $(OPENOCD) && make distclean
-
-
-.PHONY: clean
-clean:
-	cd $(OPENOCD) && make clean
+	# Rebuild configure
+	cd $(PACKAGE_NAME) && ./bootstrap
 
 
 .PHONY: configure
 configure:
-	cd $(OPENOCD) && ./configure --prefix=$(PREFIX) --enable-sysfsgpio --enable-bcm2835gpio
+	cd $(PACKAGE_NAME) && ./configure CC=$(CC) --prefix=$(PREFIX) --exec_prefix=$(EXEC_PREFIX) --enable-sysfsgpio --enable-bcm2835gpio
 	
 
 .PHONY: compile
 compile:
-	cd $(OPENOCD) && make -j4
+	cd $(PACKAGE_NAME) && make -j$(J)
 	
 
 .PHONY: install
 install:
-	cd $(OPENOCD) && make install
+	cd $(PACKAGE_NAME) && make install
+
+
+.PHONY: clean
+clean:
+	cd $(PACKAGE_NAME) && make clean
+
+
+.PHONY: distclean
+distclean:
+	cd $(PACKAGE_NAME) && make distclean
