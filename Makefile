@@ -1,13 +1,11 @@
 
-# Copyright (c) 2017-2018 embed-dsp
+# Copyright (c) 2018 embed-dsp
 # All Rights Reserved
 
 # $Author:   Gudmundur Bogason <gb@embed-dsp.com> $
 # $Date:     $
 # $Revision: $
 
-
-CC = /usr/bin/gcc
 
 PACKAGE_NAME = openocd
 
@@ -17,20 +15,61 @@ PACKAGE_VERSION = master
 
 PACKAGE = $(PACKAGE_NAME)-$(PACKAGE_VERSION)
 
-# Architecture.
-ARCH = $(shell ./bin/get_arch.sh)
-
-# Installation.
-PREFIX = /opt/openocd/$(PACKAGE)
-EXEC_PREFIX = $(PREFIX)/$(ARCH)
-
 # Set number of simultaneous jobs (Default 4)
 ifeq ($(J),)
 	J = 4
 endif
 
+# System and Machine.
+SYSTEM = $(shell ./bin/get_system.sh)
+MACHINE = $(shell ./bin/get_machine.sh)
+
+# System configuration.
+CONFIGURE_FLAGS = --enable-sysfsgpio --enable-bcm2835gpio
+
+# Linux system.
+ifeq ($(SYSTEM),linux)
+	# Compiler.
+	CC = /usr/bin/gcc
+	# Installation directory.
+	INSTALL_DIR = /opt
+endif
+
+# Cygwin system.
+ifeq ($(SYSTEM),cygwin)
+	# Compiler.
+	CC = /usr/bin/gcc
+	# Installation directory.
+	INSTALL_DIR = /cygdrive/c/opt
+endif
+
+# MSYS2/mingw32 system.
+ifeq ($(SYSTEM),mingw32)
+	# Compiler.
+	CC = /mingw32/bin/gcc
+	# Installation directory.
+	INSTALL_DIR = /c/opt
+endif
+
+# MSYS2/mingw64 system.
+ifeq ($(SYSTEM),mingw64)
+	# Compiler.
+	CC = /mingw64/bin/gcc
+	# Installation directory.
+	INSTALL_DIR = /c/opt
+endif
+
+# Architecture.
+ARCH = $(SYSTEM)_$(MACHINE)
+
+# Installation directories.
+PREFIX = $(INSTALL_DIR)/$(PACKAGE_NAME)/$(PACKAGE)
+EXEC_PREFIX = $(PREFIX)/$(ARCH)
+
 
 all:
+	@echo "ARCH   = $(ARCH)"
+	@echo "PREFIX = $(PREFIX)"
 	@echo ""
 	@echo "## Get Source Code"
 	@echo "make clone"
@@ -42,11 +81,11 @@ all:
 	@echo "make compile [J=...]"
 	@echo ""
 	@echo "## Install"
-	@echo "sudo make install"
+	@echo "[sudo] make install"
 	@echo ""
 	@echo "## Cleanup"
-	@echo "make distclean"
 	@echo "make clean"
+	@echo "make distclean"
 	@echo ""
 
 
@@ -76,10 +115,14 @@ prepare:
 	# Rebuild configure
 	cd $(PACKAGE_NAME) && ./bootstrap
 
+	# ...
+#	cd $(PACKAGE_NAME) && chmod +x configure
+#	cd $(PACKAGE_NAME) && chmod +x jimtcl/configure
+
 
 .PHONY: configure
 configure:
-	cd $(PACKAGE_NAME) && ./configure CC=$(CC) --prefix=$(PREFIX) --exec_prefix=$(EXEC_PREFIX) --enable-sysfsgpio --enable-bcm2835gpio
+	cd $(PACKAGE_NAME) && ./configure CC=$(CC) --prefix=$(PREFIX) --exec_prefix=$(EXEC_PREFIX) $(CONFIGURE_FLAGS)
 	
 
 .PHONY: compile

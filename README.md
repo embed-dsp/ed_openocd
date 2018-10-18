@@ -69,20 +69,20 @@ sudo make install
 
 The build products are installed in the following locations:
 ```bash
-opt
-└── openocd
-    └── openocd-master
-        ├── linux_x86_64    # 64-bit binaries and libraries for Linux
-        │   ├── bin
+opt/
+└── openocd/
+    └── openocd-master/
+        ├── linux_x86_64/   # 64-bit binaries and libraries for Linux
+        │   ├── bin/
         │   │   ├── openocd
         │   │   ...
-        ├── linux_x86       # 32-bit binaries and libraries for Linux
-        │   ├── bin
+        ├── linux_x86/      # 32-bit binaries and libraries for Linux
+        │   ├── bin/
         │   │   ├── openocd
         │   │   ...
-        └── share           # Architecture independent data files.
-            ├── openocd
-            │   ├── scripts
+        └── share/          # Architecture independent data files.
+            ├── openocd/
+            │   ├── scripts/
                     ...
 ```
 
