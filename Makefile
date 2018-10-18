@@ -15,6 +15,8 @@ PACKAGE_VERSION = master
 
 PACKAGE = $(PACKAGE_NAME)-$(PACKAGE_VERSION)
 
+# ==============================================================================
+
 # Set number of simultaneous jobs (Default 4)
 ifeq ($(J),)
 	J = 4
